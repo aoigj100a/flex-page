@@ -42,17 +42,18 @@ a {
 
 :root {
     --m_gray: #3f5d45;
-    --c-gray: #EAF0ED;
+    --c_gray: #EAF0ED;
 }
 
-.containar {
-    width: 120px;
+.container {
+    width: 940px;
     margin: 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
@@ -66,8 +67,44 @@ a {
     display: block;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 .banner {
     margin-bottom: 60px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    width: 300px;
+}
+
+.aside h2 {
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 24px;
+    background: var(--m_gray);
+}
+
+.aside li {
+    margin-bottom: -1px;
+}
+
+.aside li a {
+    line-height: 65px;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    color: #000;
+    border: 1px solid #EAF0ED;
+}
+
+.aside li a:hover {
+    background: var(--c_gray);
 }
