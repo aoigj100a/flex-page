@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     margin: 0;
-    line-height: 0.9;
+    /* line-height: 0.9; */
 }
 
 p {
@@ -43,6 +43,7 @@ a {
 :root {
     --m_gray: #3f5d45;
     --c_gray: #EAF0ED;
+    --boder-_white: #EAF0ED;
 }
 
 .container {
@@ -101,10 +102,73 @@ a {
     font-size: 24px;
     text-align: center;
     display: block;
-    color: #000;
-    border: 1px solid #EAF0ED;
+    color: var(--m_gray);
+    border: 1px solid var(--c_gray);
 }
 
 .aside li a:hover {
     background: var(--c_gray);
+}
+
+.product-list {
+    width: 620px;
+}
+
+.product-list-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-list-card li {
+    width: 300px;
+    position: relative;
+}
+
+.product-list-card .tag {
+    position: absolute;
+    background: var(--m_gray);
+    color: #fff;
+    padding: 10px;
+    left: 20px;
+    top: 0;
+    letter-spacing: 5px;
+    writing-mode: vertical-lr;
+}
+
+.product-list-card .heart {
+    position: absolute;
+    font-size: 20px;
+    top: 19px;
+    letter-spacing: 5px;
+    right: 22px;
+}
+
+.product-list-card .product-list-card-body {
+    display: flex;
+    /* flex: 1 1; */
+    align-items: center;
+    justify-content: center;
+    line-height: 60px;
+    border-bottom: 1px solid var(--c_gray);
+    border-left: 1px solid var(--c_gray);
+    border-right: 1px solid var(--c_gray);
+    font-size: 20px;
+}
+
+.product-list-card .product-list-card-cart {
+    padding: 13px;
+    width: 300px;
+    height: 65px;
+    background: var(--c_gray);
+    color: var(--m_gray);
+    font-size: 24px;
+}
+
+.product-list-card .product-list-card-body h2 {
+    width: 173px;
+}
+
+.product-list-card .product-list-card-body span {
+    width: 127px;
 }
