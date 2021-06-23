@@ -182,7 +182,8 @@ a {
 
 .product-list-card .product-list-card-cart {
     padding: 13px;
-    width: 300px;
+    /* 子層 .product-list-card .product-list-card-cart 會繼承父層 .product-list-card li 的設定，所以 .product-list-card .product-list-card-cart 寬度可刪除 */
+    /* width: 300px; */
     height: 65px;
     background: var(--c_gray);
     color: var(--m_gray);
